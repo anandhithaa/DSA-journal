@@ -1,0 +1,22 @@
+**Climbing Stairs II (LC 3693)** - Climb upto the nth stair. For each stair, there is a cost and you can reach a stair from one of the 3 steps right below it. Find the min cost to reach the nth step.
+Approach - Dynamic Programming 
+Complexity - O(n) TC, O(n) SC
+
+**Minimum Value of Merged Integers (LC 4097)** - Merge odd and even nos and return the min. Guaranteed that the input vector is of even length. 
+Approach - choose every odd index (1, 3, etc) and loop over it, merging it with the previous and dynamically updating min val. convert both n1 and n2 to strings and then concatenate it. 
+stoi(n) => converts string to integer 
+Complexity - O(n) TC, O(1) SC
+
+**Remove K Digits (LC 402)** - Smallest possible number after removing K digits
+Approach = the smallest number should be the MSB, so we try to find nse (monotonic increasing stack). We pop elements into a stack and reverse it, we do need to deal with leading zeroes by taking a substring from the pointer where leading 0 isn't present. 
+Complexity => O(n) TC, O(n) SC
+
+**Largest Rectangle in Histogram (LC 84)** - A histogram of heights is given and we've to find the largest area. 
+Approach - Find the pse and nse for each bar and the area becomes (pse - nse - 1)*height. (Do it on the fly while popping). 
+Complexity => O(n) 
+
+**Maximal Rectangle** - Rowwise Largest Rectangle in Histogram 
+
+**Repeated DNA Sequences** - Used a set but actually, bit manipulation question. 
+
+**Kth Largest Element in an Array* - Minheap of size k, pop. 
